@@ -7,7 +7,7 @@ import 'package:injectable/injectable.dart';
 import 'rewards_intent.dart' as intent;
 import 'rewards_state.dart';
 
-@injectable
+@lazySingleton
 class RewardsCubit extends Cubit<RewardsState> {
   final GetRewards _getRewards;
   final RedeemReward _redeemReward;

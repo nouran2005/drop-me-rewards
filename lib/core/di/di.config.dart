@@ -40,7 +40,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i901.GetRewards>(
       () => _i901.GetRewards(gh<_i801.RewardsRepository>()),
     );
-    gh.factory<_i246.RewardsCubit>(
+    gh.lazySingleton<_i246.RewardsCubit>(
       () =>
           _i246.RewardsCubit(gh<_i901.GetRewards>(), gh<_i205.RedeemReward>()),
     );
