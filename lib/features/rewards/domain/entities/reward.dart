@@ -4,7 +4,6 @@ class Reward {
   final String description;
   final int pointsRequired;
   final String category;
-  final String imageUrl;
 
   const Reward({
     required this.id,
@@ -12,6 +11,5 @@ class Reward {
     required this.description,
     required this.pointsRequired,
     required this.category,
-    required this.imageUrl,
   });
 }

@@ -6,7 +6,6 @@ class RewardModel {
   final String description;
   final int pointsRequired;
   final String category;
-  final String imageUrl;
 
   const RewardModel({
     required this.id,
@@ -14,7 +13,6 @@ class RewardModel {
     required this.description,
     required this.pointsRequired,
     required this.category,
-    required this.imageUrl,
   });
 
   Reward toEntity() {
@@ -24,7 +22,6 @@ class RewardModel {
       description: description,
       pointsRequired: pointsRequired,
       category: category,
-      imageUrl: imageUrl,
     );
   }
 }
