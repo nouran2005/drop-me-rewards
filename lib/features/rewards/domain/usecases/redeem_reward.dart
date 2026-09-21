@@ -1,10 +1,17 @@
 import 'package:drop_me_rewards/features/rewards/domain/entities/reward.dart';
 
 class RedeemReward {
-  bool call({
+  int call({
     required int currentPoints,
     required Reward reward,
   }) {
-    return currentPoints >= reward.pointsRequired;
+    if (currentPoints < reward.pointsRequired) {
+      throw Exception(
+        'Insufficient points. You need ${reward.pointsRequired} pts, '
+        'but only have $currentPoints.',
+      );
+    }
+
+    return currentPoints - reward.pointsRequired;
   }
 }
