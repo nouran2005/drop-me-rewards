@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../cubit/rewards_intent.dart' as intent;
+import '../pages/reward_details_page.dart';
 import 'reward_card.dart';
 
 class RewardsGridView extends StatelessWidget {
@@ -128,6 +129,11 @@ class RewardsGridView extends StatelessWidget {
           return RewardCard(
             reward: reward,
             onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => RewardDetailsPage(reward: reward),
+                ),
+              );
             },
           );
         },
