@@ -4,6 +4,12 @@ A Flutter application built for the Drop Me Flutter Developer Internship assessm
 
 ---
 
+## Demo
+
+[▶ View app demo on Google Drive](https://drive.google.com/drive/folders/1ObELH8kagujNhbNjhDqf8oKEGGi5nenQ?usp=drive_link)
+
+---
+
 ## Features
 
 - **Points balance** — current balance is always visible at the top of the marketplace
