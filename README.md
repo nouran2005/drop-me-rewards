@@ -163,4 +163,4 @@ flutter run
 
 ## AI Usage
 
-An AI tool was used in one minor, non-code task: extracting brand color references from visual assets to assist in setting up the theme palette. The implementation was completed independently..
+An AI tool was used in one minor, non-code task: extracting brand color references from visual assets to assist in setting up the theme palette. The implementation was completed independently.
