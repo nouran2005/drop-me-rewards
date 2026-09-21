@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'core/constants/app_constants.dart';
+import 'core/di/di.dart';
+
 void main() {
+  configureDependencies();
 
   runApp(
-    MaterialApp(
-        title: AppConstants.appName,
-        debugShowCheckedModeBanner: false,
-        home: const Placeholder(),
-      ),
+    const MaterialApp(
+      title: AppConstants.appName,
+      debugShowCheckedModeBanner: false,
+        home: Placeholder(),
+    ),
   );
 }

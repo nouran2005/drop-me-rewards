@@ -1,5 +1,7 @@
+import 'package:injectable/injectable.dart';
 import '../models/reward_model.dart';
 
+@lazySingleton
 class RewardsMockDataSource {
   Future<List<RewardModel>> getRewards() async {
     await Future.delayed(const Duration(milliseconds: 800));

@@ -3,9 +3,11 @@ import 'package:drop_me_rewards/features/rewards/domain/entities/reward.dart';
 import 'package:drop_me_rewards/features/rewards/domain/usecases/get_rewards.dart';
 import 'package:drop_me_rewards/features/rewards/domain/usecases/redeem_reward.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'rewards_intent.dart' as intent;
 import 'rewards_state.dart';
 
+@injectable
 class RewardsCubit extends Cubit<RewardsState> {
   final GetRewards _getRewards;
   final RedeemReward _redeemReward;
