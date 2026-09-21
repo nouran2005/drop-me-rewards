@@ -1,5 +1,6 @@
+
+import 'package:drop_me_rewards/features/rewards/data/models/reward_model.dart';
 import 'package:injectable/injectable.dart';
-import '../models/reward_model.dart';
 
 @lazySingleton
 class RewardsMockDataSource {
@@ -17,48 +18,12 @@ class RewardsMockDataSource {
         category: 'Mobile',
       ),
       RewardModel(
-        id: '7',
-        name: 'Internet Data Bundle',
-        description:
-            '1 GB mobile data bundle valid for 7 days. '
-            'Stay connected wherever you go with this handy data top-up.',
-        pointsRequired: 200,
-        category: 'Mobile',
-      ),
-      RewardModel(
-        id: '8',
-        name: 'Monthly SIM Plan',
-        description:
-            'Redeem this voucher for a full month of unlimited calls and 5 GB data '
-            'on any participating carrier.',
-        pointsRequired: 350,
-        category: 'Mobile',
-      ),
-      RewardModel(
         id: '2',
         name: 'Coffee Voucher',
         description:
             'Enjoy your favorite hot or iced coffee at any participating café. '
             'Valid for one drink of your choice, up to size Large.',
         pointsRequired: 150,
-        category: 'Food',
-      ),
-      RewardModel(
-        id: '3',
-        name: 'Food Delivery Voucher',
-        description:
-            'Get 50 EGP off your next food delivery order via any supported app. '
-            'Minimum order value 120 EGP. Single use only.',
-        pointsRequired: 250,
-        category: 'Food',
-      ),
-      RewardModel(
-        id: '9',
-        name: 'Restaurant Meal Voucher',
-        description:
-            'Dine in at any of our partner restaurants and enjoy a complimentary '
-            'meal for one, including a main course and a soft drink.',
-        pointsRequired: 450,
         category: 'Food',
       ),
       RewardModel(
@@ -71,6 +36,24 @@ class RewardsMockDataSource {
         category: 'Shopping',
       ),
       RewardModel(
+        id: '7',
+        name: 'Internet Data Bundle',
+        description:
+            '1 GB mobile data bundle valid for 7 days. '
+            'Stay connected wherever you go with this handy data top-up.',
+        pointsRequired: 200,
+        category: 'Mobile',
+      ),
+      RewardModel(
+        id: '3',
+        name: 'Food Delivery Voucher',
+        description:
+            'Get 50 EGP off your next food delivery order via any supported app. '
+            'Minimum order value 120 EGP. Single use only.',
+        pointsRequired: 250,
+        category: 'Food',
+      ),
+      RewardModel(
         id: '5',
         name: 'Shopping Voucher',
         description:
@@ -78,6 +61,24 @@ class RewardsMockDataSource {
             'Use this voucher on your favorite products — fashion, electronics, and more.',
         pointsRequired: 600,
         category: 'Shopping',
+      ),
+      RewardModel(
+        id: '8',
+        name: 'Monthly SIM Plan',
+        description:
+            'Redeem this voucher for a full month of unlimited calls and 5 GB data '
+            'on any participating carrier.',
+        pointsRequired: 350,
+        category: 'Mobile',
+      ),
+      RewardModel(
+        id: '9',
+        name: 'Restaurant Meal Voucher',
+        description:
+            'Dine in at any of our partner restaurants and enjoy a complimentary '
+            'meal for one, including a main course and a soft drink.',
+        pointsRequired: 450,
+        category: 'Food',
       ),
       RewardModel(
         id: '10',
